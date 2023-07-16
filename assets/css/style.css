@@ -635,10 +635,12 @@ section .container {
   color: #fff;
 }
 
+.resume .resume-item:not(.resume-left) {
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
 }
 
@@ -673,7 +675,7 @@ section .container {
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
+.resume .resume-item:not(.resume-left)::before {
   content: "";
   position: absolute;
   width: 16px;
